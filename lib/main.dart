@@ -1,9 +1,13 @@
-import 'package:flame/game.dart';
-import 'package:flutter/widgets.dart';
-
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:spinners/spinners_game.dart';
 
-void main() {
-  final game = SpinnersGame();
-  runApp(GameWidget(game: game));
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
+
+  runApp(SpinnersGame());
 }
