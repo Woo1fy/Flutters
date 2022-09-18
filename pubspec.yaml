@@ -4,7 +4,7 @@ version: 0.0.0
 publish_to: none
 
 environment:
-  sdk: ^2.16.0
+  sdk: ^2.17.0
   flutter: ^2.10.0
 
 dependencies:
@@ -15,5 +15,6 @@ dependencies:
 flutter:
   assets: 
     - assets/images/
+  uses-material-design: true
 dev_dependencies:
   flutter_lints: ^2.0.1
