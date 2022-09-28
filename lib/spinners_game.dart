@@ -98,6 +98,7 @@ class _MainPageState extends State<MainPage> {
     }
   }
 
+  // Не хватило времени на адекватную реализацию подсказок :(
   void displayAToolTip() {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
